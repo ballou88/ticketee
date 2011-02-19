@@ -10,6 +10,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :test do
   gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'factory_girl'
 end
 
 group :cucumber do
