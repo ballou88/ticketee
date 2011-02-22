@@ -21,7 +21,7 @@ Given /^(?:|I )am on (.+)$/ do |page_name|
 end
 
 Given /^there is a project called "([^\"]*)"$/ do |name|
-  Factory(:project, :name => name)
+  @project = Factory(:project, :name => name)
 end
 
 When /^(?:|I )go to (.+)$/ do |page_name|
