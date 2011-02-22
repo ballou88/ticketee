@@ -1,6 +1,7 @@
 <h2><%= @ticket.title %> <h2>
     <menu>
       <%= link_to "Edit", [:edit, @project, @ticket] %>
+      <%= link_to "Delete", [@project, @ticket], :method => :delete, :comfirm => "Are you sure?" %>
     </menu>
 <%= simple_format(@ticket.description) %>
 
